@@ -1,0 +1,43 @@
+
+.fade-carousel .slides .slide-1.beneficios,
+.fade-carousel .slides .slide-2.beneficios,
+.fade-carousel .slides .slide-3.beneficios,
+.fade-carousel .slides .slide-4.beneficios,
+.fade-carousel .slides .slide-5.beneficios,
+.fade-carousel .slides .slide-6.beneficios {     
+    box-shadow: 0 1px 4px 0 rgba(110, 110, 110, 0.5); 
+    height: 77px;
+}
+
+.beneficios {
+    h4,
+    p {
+        margin-left: 30%;
+    }
+}
+
+.beneficios {
+    .imagen {
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        margin-left: 8%;
+        margin-top: -5px;
+    }
+    .imagen1 {
+        background-image: url("../images/prefer/icon-person.png");       
+        width: 45px;
+        height: 44px;       
+    }
+    .imagen2 {
+        background-image: url("../images/prefer/icon-economy.png");      
+        width: 50px;
+        height: 40px;        
+    }
+    .imagen3 {
+        background-image: url("../images/prefer/icon-airplane.png");       
+        width: 45px;
+        height: 45px;      
+    }
+}
+

@@ -1,0 +1,159 @@
+html, body{	
+	width:100%;
+	background-color: #fff;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;	
+}
+
+html {
+	min-height: 100%;
+	position: relative;
+}
+
+body {
+	margin-bottom: 60px;
+}
+
+.fixed-header {
+	position:fixed;
+	width: 100%;
+	z-index: 999; 
+	background-color:#fff;
+		&.line {
+			border-bottom: 1px solid $dark-8;
+			padding-bottom: 10px;			
+		}
+		&.margin {
+			margin-left: -8px;
+		}
+		&.landing {
+			box-shadow: 0 -1px 4px 0 rgba(0, 0, 0, 0.15);
+		}
+}
+
+.content {
+	margin-top:270px;
+		&.vertical-center {
+			margin-top: 0px;
+		}
+		&.xxx-small {
+			margin-top: 150px;
+		}
+		&.xx-small {
+			margin-top: 200px;
+		}
+		&.small {
+			margin-top: 271px;		
+		}
+		&.medium {
+			margin-top: 270px;		
+		}
+		&.long {
+			margin-top: 270px;		
+		}
+		&.fixed-button {
+			padding-bottom: 30px;
+		}
+		&.landing {
+			margin-top: 18px;
+				&.no-banner {
+					margin-top: 270px;
+				}
+		}		
+}
+
+
+.captcha {
+	margin-bottom:20px;
+	float: left;
+		&.transparent {
+			opacity: 0.5;
+		}		
+}
+
+.reload-captcha {
+	vertical-align: middle; 
+    height: 73px;
+    display: -webkit-inline-box;
+    display: table-cell;
+	padding-left: 20px;
+		&.white {
+			color:#fff;
+		}
+}
+
+.division-line {
+	margin-bottom:30px;
+}
+
+.footer{
+	background-color: $white;
+	width: 100%;	
+	text-align:center;
+	color: $dark-48;
+	height: 60px;
+	padding-top: 20px;
+	position: absolute;
+	bottom: 0;
+		p {				
+			display: inline-block;
+			padding-right:40px;
+			font-size:12px;	
+		}
+		a {
+			display: inline-block;
+			color: $dark-48;
+			text-decoration:underline;
+			font-size:12px;
+			cursor:pointer;		
+		}
+		&.fixed {
+			position:fixed;
+			bottom:0px;		
+		}
+		&.fixed-button {
+			position: fixed;			
+			background-color: transparent;
+			z-index: 99;
+			bottom: 50px;
+				a {
+					margin-left: 0px;
+				}
+		}
+		&.landing {
+			margin-top: 50px;
+			a {
+				font-size: 15px;
+				font-weight: 500;
+				color: $grey-medium;
+				letter-spacing: 0.5px;
+				text-align: left;
+				display: block;
+				margin-left: 0px;
+				text-decoration: none;
+			}
+			.fa-angle-right {
+				float: right;
+				color: $grey-medium-3;
+				font-size: 30px;
+				margin-top: -25px;
+				cursor: pointer;					
+			}
+			.fa-angle-down {
+				float: right;
+				color: $grey-medium-3;
+				font-size: 30px;
+				margin-top: -25px;
+				cursor: pointer;
+			}
+			.terminos-condiciones-landing {
+				p {
+					text-align: justify;
+					font-size: 13px;					 
+					line-height: 1.54;
+					letter-spacing: 0.5px;					  
+					color: $grey-medium;
+					padding-top: 25px;					  
+				}				
+			}
+		}
+}

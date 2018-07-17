@@ -1,0 +1,126 @@
+.additionals {
+	h3 {
+		font-size: 24px;
+		color:$warm-grey-three;
+	}
+	h4 {
+		font-size: 17px;
+		color:$dark;
+	}
+	.maximum {
+		height: 143px;
+		border: solid 1px $pinkish-grey;
+		border-radius: 3.5px;
+		text-align:center;
+		border-style: dashed;
+		padding-top: 50px;
+		margin-top: 30px;
+		margin-left: -10px;
+			a {
+				font-size: 17px;
+				color:$pinkish-grey;
+				font-weight: normal;
+			}		
+	}
+	.add {
+		height: 143px;
+		border: solid 1px $pinkish-grey;
+		border-radius: 3.5px;
+		text-align:center;
+		border-style: dashed;
+		padding-top: 50px;
+		margin-top: 30px;
+		margin-left: -10px;
+			a {
+				font-size: 17px;
+				color:$bright-orange;
+				font-weight: normal;
+			}		
+	}
+	.client {
+		height: 143px;
+		background-color: $white-two;
+		border-radius: 3.5px;
+		padding-top: 5px;
+		margin-top: 30px;
+		padding-left: 10px;
+		margin-left: -10px;
+			h4 {
+				font-size: 17px;
+ 				font-weight: 900;
+ 				color: $greyish-brown;
+ 				margin-top: -7px;
+			}
+			h5 {
+				font-size: 14px;
+				color: $dark-48;
+				padding-top: 3px;
+			}
+	}
+}
+
+.edit-delete {
+	text-align:right;
+	padding-right: 10px;
+		p {
+			padding-right: 5px;
+    		color: $dark;
+		}
+}
+
+.icons-cards {
+	min-height: 50px;
+}
+
+
+.boxes-adicionales {
+	margin-bottom: 185px;
+	position: relative;
+		.box {	
+			height: 153px;
+			border-radius: 10px;
+			box-shadow: 0 0 15px $white-five;
+		}
+		.fa-pencil {
+			position: absolute;
+			top: 6px;
+			left: 25px;
+			cursor: pointer;
+				&:before {
+					font-size: 24px;					
+				}			
+		}
+		.fa-times {
+			float: right;
+			font-size: 20px;
+			color: $white-four;
+			padding-right: 10px;
+			padding-top: 10px;
+			cursor: pointer;
+		}
+		p {
+			padding-top: 45px;
+			padding-left: 8px;
+			padding-bottom: 17px;
+			color: $grey-dark-2;
+		}
+		.icon-visa {
+			background-image: url(../images/visa.png);
+			width: 54px;
+			height: 17px;
+			background-size: cover;
+			margin-left: 7px;
+			display: inline-block;
+			margin-bottom: 20px;
+		}
+		.icon-mastercard {
+			background-image: url(../images/mastercard.png);
+			width: 46px;
+    		height: 30px;
+    		background-size: cover;
+    		float: right;
+    		margin-top: -5px;
+    		margin-right: 22px;
+		}
+}
+

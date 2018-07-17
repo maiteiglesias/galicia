@@ -1,0 +1,652 @@
+
+.inputWrapper {
+    position: relative;
+    padding: 35px 16px 2px;
+    float: left;
+    width: 100%;
+    padding: 25px 0 2px;
+	  margin-top:20px;	      
+
+		input.form-control{
+			font-size: 17px;
+			height: 31px;
+			border:none;
+			box-shadow:none;
+			margin-left:0px;
+			padding-right: 0px;
+            padding-left: 2px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            background-color: transparent;
+        } 
+        input.form-control[type=password] {
+              font-size: 17px;
+              padding-left: 0px;
+        }
+   
+    .inputArea {
+        display: block;
+        width: 100%;
+        position: relative;
+        .inputUnderline {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 1px;
+            background-color: rgba(23, 25, 31, 0.24);
+            transition: background-color 1000ms ease-out;
+                &.error {
+                    background-color: red;
+                }
+        }
+
+        &.focus .inputUnderline {
+            height: 2px;
+            background-color: $orange;
+        }
+
+        .inputLabel {
+            position: absolute;
+            left: 1px;
+            top: 5px;
+            opacity: 1;
+            font-size: 17px;
+            font-weight: 400;
+            letter-spacing: 0.4px;
+            color: $dark-48;
+            transform-origin: left top;
+            transition: color 200ms ease, transform 200ms ease;
+            pointer-events: none;
+            cursor: text;
+        }
+
+        &:not(.open){
+            &.typed .inputLabel {
+                opacity: 1;
+                transform: translateY(-22px) scale(0.82);
+            }
+        }
+        &.error {
+             .inputUnderline {
+                     background-color: $red;                 
+             }
+             .inputLabel {
+                 color:$red;
+             }
+        }
+    } 
+	p {
+		color:$dark-48;
+		font-size:14px;		
+		padding-top:2px;
+		padding-bottom:15px;
+		font-style: italic;
+		margin-right: -21px;	
+    } 
+    
+    .phone-flag {
+        input, .inputLabel {
+            padding-left: 4em;
+            padding-bottom: 3px;
+        }
+    }
+    .phone-flag:not(.open).typed .inputLabel {
+        -webkit-transform: translateY(-18px) translateX(-63px) scale(.82);
+        -ms-transform: translateY(-18px) translateX(-63px) scale(.82);
+        transform: translateY(-18px) translateX(-63px) scale(.82);
+    }
+}
+
+
+.phone-flag {
+    .flag {
+         width: 20px;
+         box-shadow: 0 0 1px 0 #888;
+         background-image: url(../images/flags.png);
+         background-repeat: no-repeat;
+         background-color: #dbdbdb;
+         height: 13px;
+         background-position: -220px 0;
+         margin-top: 10px;
+         position: absolute;
+         top: 0;
+            &:after {
+                 content: "+54|";
+                 color: rgba(21, 28, 41, .48);
+                 font-size: 17px;
+                 position: relative;
+                 right: -1.5em;
+                 top: -4px;
+            }            
+    }
+}
+
+
+.form-control {
+	padding-left:0px;
+}
+
+.txt-error {
+    color: #f00;
+    position: relative;
+}
+
+.txt-error:before {
+    padding-right: 10px;
+}
+
+/* Radio Buttons */
+
+.control {
+    font-size: 17px;
+    position: relative;
+    display: block;
+    margin: 19px 0;
+    padding-left: 30px;
+    cursor: pointer;
+	  color: $dark-48;
+	  display:inline-block;
+	  margin-right:20px;
+}
+
+.control input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;	
+}
+
+.radiobutton-indicator {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.radiobutton .radiobutton-indicator {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border: 1px solid $dark-48;
+}
+
+.radiobutton .radiobutton-indicator:after {
+    top: 4px;
+    left: 4px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.column-card, .pop-up-offer {
+	.radiobutton .radiobutton-indicator {
+		top: 11px;	
+	}
+}
+
+/* Check mark */
+.radiobutton-indicator:after {
+    position: absolute;
+    display: none;
+    content: '';
+}
+
+/* Show check mark */
+.control input:checked ~ .radiobutton-indicator:after {
+    display: block;
+    background-color:$bright-orange;
+}
+
+
+/* Type number */
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+
+.checkbox {
+	float: left;
+    color: $dark-48;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    margin-left: 33px; 
+		label {
+     	   display: inline-block;
+           position: relative;
+     	  	 &::before {
+        	 	content: "";
+       			display: inline-block;
+       			position: absolute;
+       			width: 18px;
+       			height: 18px;
+      			left: 1px;
+       			top:1px;
+       			margin-left: -20px;
+      			border-radius: 3px;
+       			border: solid 1px rgba(21, 28, 40, 0.36);
+       			background-color: #fff;
+       			-webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+       			-o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+       			transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+     		 }
+			&::after {
+        		display: inline-block;
+       			position: absolute;
+       			width: 16px;
+       			height: 16px;
+       			left: 0;
+       			top: 0;
+           		margin-left: -20px;
+       			padding-left: 3px;
+       			padding-top: 1px;
+       			font-size: 11px;
+       			color: #555555; 
+     		}
+			&.card {
+				width:60px;			
+			}
+		}
+	+ p {
+		margin-left:40px;	
+	}
+
+		input[type="checkbox"] {
+			opacity: 0; 
+				&:checked + label::after {
+       				@extend .icon; 
+       				@extend .icon-check:before; 
+       				font-size: 9px;
+       				padding-top: 6px;
+       				padding-left: 4px;
+     			}
+		&:disabled + label {
+        	opacity: 0.65;
+        }
+		&:disabled + label::before {
+        	background-color: #eeeeee;
+        	cursor: not-allowed; 
+        }
+		&:checked + label::before {
+        	background-color: $orange;
+        	border-color: $orange;
+     	 }
+		&:checked + label::after {
+        	color: #fff; 
+     	}
+    }
+}
+
+.adhesion-quiero {
+  h4 {
+    font-size:17px;
+    color: $greyish-brown;
+    line-height: 42px;
+  }
+}
+
+.digitalizacion { 
+    text-align: center;
+    .checkbox {
+       display: inline-block;
+       float: none;
+       label {
+           padding-left: 1px;
+                &::before {               
+                    border: solid 1px #fff;
+                    background-color: transparent;
+                    top: 5px;
+                }
+                &::after {
+                    top: 5px;
+                }
+        }
+    }
+    h4 {
+        font-size: 17px;
+        color: #fff;       
+        display: inline-block;
+    }
+    a {
+        font-size: 17px;
+        font-weight: normal;
+        
+            &:hover {
+                color: $deep-orange;
+            }
+    }
+    .btn {
+        text-transform: none;
+        font-size: 16px;
+            &.btn-md {
+                height: 45px;
+                width: 300px;
+                margin-top: 25px;
+                margin-left: 20px;
+                margin-bottom: 30px;
+            }
+
+    }
+    footer {
+        a {
+            color: $orange;
+            text-decoration: none;
+            font-size: 17px;
+        }
+    }
+}
+
+
+.terms-conditions {
+    h4 {
+      font-size: 15px;
+      line-height: 40px;
+    }
+    h5 {
+        font-size: 15px;
+        line-height: 20px; 
+        padding-top: 10px;
+        margin-bottom: 20px;
+    }
+    a {
+      font-size: 15px;
+      color: $bright-orange;     
+      font-weight: normal;
+    }
+    .checkbox label {
+      padding-left: 7px;
+    }
+    .btn.btn-md {
+      margin-left: -227px;
+    }
+    &.centered {
+      margin-top: 40px;
+        .checkbox {
+         margin-left: 67px;
+        }
+    }
+}
+
+.radio-logos-cards-containar {
+  text-align: center;
+}
+
+.first-remarked li:first-child {
+  border-bottom: 1px dashed #999; 
+  padding-bottom: 5px!important;
+  margin-bottom: 5px;
+}
+
+
+
+.inputAutosize{
+    position: relative;
+	max-width: 95%;
+    &.md{
+        .placeholder, input, .copycat {
+            font-size: 32px;
+            line-height: 50px;
+            height: 60px;
+            top:5px;  
+        }
+        .errorMsg::after{
+            height: 2px;
+            top:33px;            
+        }
+        .extra-content{
+            font-size: 32px;
+            line-height: 50px;
+            height: 60px;
+            color:$dark-36; 
+            font-weight: normal;
+            padding-top: 4px;
+            float: left;
+            padding-left: 3px;
+            border-bottom:1px solid #333;
+        }
+
+        &.focus{
+            .extra-content{
+                border-bottom: 2px solid $orange;
+            }
+        }
+
+        &.typed{
+            .extra-content{
+                color:#333;
+            }
+        }
+
+   }
+
+   &.sm-white {
+       .placeholder, input, .copycat {
+           font-size: 15px;
+           line-height: 67px;
+           height: 38px;
+           top: 5px;
+           background-color: transparent;
+           box-shadow: none;
+           color: #fff;
+           
+       }       
+       .placeholder {           
+           line-height: 58px;
+           height: 39px;
+           top: -11px;
+           margin-left: -5px;
+       }         
+       &.focus {
+           .extra-content {
+               border-bottom: 2px solid #fff;
+           }
+       }
+       &.typed {
+           .extra-content {
+               color: #fff;
+           }
+       }
+       input {
+           border-bottom: 1px solid #fff;
+           &:focus {
+               box-shadow: none;
+               border-bottom: 1px solid #fff;
+           }
+           &.width-207 {
+               width: 207px !important;
+           }  
+            &.deshabilitado {
+                color: #999;
+                cursor: not-allowed;
+            }
+       }
+
+       }
+
+    #copycat, .copycat{
+        display:none;
+        font-size: 78px;
+        white-space: pre;
+        max-width:100%;
+    }
+  
+    .placeholder{
+        position: absolute;
+        left: 5px;
+        top: 0px;
+        opacity: 1;
+        font-size: 78px;
+        font-weight: 400;
+        height: 100px;
+        line-height: 99px;
+        pointer-events: none;
+        color:#333;
+        width: auto;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        z-index: -1px;
+        cursor: text;
+    }
+
+    .currency{
+        color:#333;
+        border-bottom: 1px solid $dark-12-three;
+        font-size: 78px;
+        font-weight: 300;
+        padding-bottom: 3px;
+        float: left;
+        height: 100px;
+        line-height: 99px;      
+
+        ~ .placeholder{
+           left: 43px; 
+        }
+
+        &.dolar ~ .placeholder{
+            left: 157px;
+                
+        }
+    }
+
+    .check{
+        height: 100px;
+        float: left;
+        font-size: 24px;
+        color: $dark-48;
+        border-bottom: 1px solid #333;
+        padding-top: 46px;
+        padding-left: 24px;
+    }
+
+    &.focus{
+        input, .currency, .check {
+            border-bottom: 2px solid $orange;
+        }
+		&.asterik:after{
+            border-bottom: 2px solid $orange;
+    		top: 11px;
+			padding-bottom:0px;
+			
+		}
+        
+        .errorMsg{
+          &:after{
+            height: 2px;
+                top: 33px;
+          }  
+        }
+
+        .placeholder{
+            //display: none;
+        }
+    }
+
+    &.typed{
+        .placeholder{
+            display: none;
+        }
+    }
+
+    input{
+        float: left;
+        height: 100px;
+        line-height: 80px;
+        padding: 0;
+        padding-left: 1px;
+        border:none;
+        box-shadow:0 0 0px 1000px white inset;
+        -webkit-box-shadow: 0 0 0px 1000px white inset;
+        background-image: none;
+        background-color: transparent;
+        color:$dark-two;
+        appearance:none;
+        -moz-appearance: textfield;
+        -webkit-appearance:none; /* Safari and Chrome */
+        border-bottom: 1px solid $dark-12-three;
+        font-size: 78px;
+        min-width: 20px;
+        width: auto;
+        text-align: left;
+        max-width: 100%;
+        &::-ms-clear, &::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+        &::-webkit-inner-spin-button{
+            appearance:none;
+            -moz-appearance:none; /* Firefox */
+            -webkit-appearance:none; /* Safari and Chrome */
+        }
+        
+        &:focus{
+            border:none;
+            border-bottom: 2px solid $orange;
+            box-shadow:0 0 0px 1000px white inset;;
+            -webkit-box-shadow: 0 0 0px 1000px white inset;
+            -webkit-appearance: none;
+            outline: none;            
+        }
+	}
+	}
+
+.inputWrapper.big-password {
+	position:relative;
+	input.form-control {
+		font-size: 30px;
+		letter-spacing: 10px;
+		width:85px;
+	}
+	.inputArea .inputUnderline {
+		width:85px;
+	}
+	.extraInfo #extraMessage {
+		position: absolute;
+   		left: 100px;
+   		top: 29px;
+   		font-size: 17px;
+   		font-weight: bold;
+        letter-spacing: 14px;	
+	}
+	&.error {
+		input.form-control {
+			color:#f00;						
+		}
+		.inputUnderline {
+			background-color:#f00;	
+		}
+		.extraInfo  {
+			#extraMessage {
+				color:#f00;
+				position: absolute;
+   				left: 100px;
+   				top: 29px;	
+			}		
+			.extraMessageError {
+    			position: absolute;
+   				left: 0px;
+   				top: 60px;
+   				height: 40px;
+  				width: 136px;
+   				color: #f00;
+   				font-size: 9px;					
+			}	
+		}	
+	}
+}
+
+
+	

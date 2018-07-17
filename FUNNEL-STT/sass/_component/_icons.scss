@@ -1,0 +1,116 @@
+a {
+    &:focus, &:hover, &:visited, &:active{
+        outline: none;
+        text-decoration: none;
+    }
+}
+
+.icon {
+	font-family: 'galicia-ui' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-decoration: none;
+    	&:hover, &:active, &:focus{
+    		text-decoration: none;
+  		}
+}
+
+.icon-check:before {
+  content: "\e908";
+}
+
+
+.fa-plus-circle:before {
+    color:$bright-orange;
+    font-size: 20px;
+}
+
+.fa-pencil:before {
+    color:$bright-orange;
+    font-size: 16px;
+    margin-right: 3px;    
+}
+
+.fa-trash-o:before {
+    color:$dark-36;
+    font-size: 17px;
+}
+
+.fa-download:before, .fa-print:before {
+    color:$dark-48-three;
+    border: 1px solid $dark-24;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 10px;   
+}
+
+.fa-star-o:before {
+    color:$warm-grey;
+    font-size: 40px;    
+}
+
+.fa-star:before {
+    color:$bright-orange;
+    font-size: 40px;    
+}
+
+.fa-envelope-o:before {
+    color:$dark-64-two;
+    font-size: 40px; 
+}
+
+.icon-quiero{
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 23px;
+    margin: auto;
+    display: block;
+    background-image: url("../images/logo-quiero.svg");
+    margin-left: 2px;
+    margin-bottom: -6px;
+    display:inline-block; 
+    background-position: bottom;
+    background-size: cover; 
+}
+
+.icon-exclamation {
+    margin-top: 70px;
+    margin-left: -20px;
+        a {
+            border: 1px solid $orange;
+            border-radius: 15px;
+            padding-left: 9px;
+            padding-right: 9px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            margin-left: 5px;
+            color: $orange;
+            line-height: 43px;               
+        }
+}
+
+.icon-plus {
+    font-size: 20px;
+    border: 1px solid;
+    border-radius: 15px;
+    width: 30px;
+    height: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+        &:focus {
+            color: $orange;
+        }
+}
+
+
+
+
+
+
+

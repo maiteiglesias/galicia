@@ -1,0 +1,116 @@
+
+.info-exito {
+    text-align: center;
+        .icon-svg {
+            width: 117px;
+            height: 117px;       
+            background-size: cover;
+        }
+        h1 {
+            color: $orange;
+            font-size: 42px;
+            margin-top: 25px;
+            font-weight: bold;
+        }
+        h2 {
+            color: $orange;
+            font-size: 38px;
+        }
+        h3 {
+            font-size: 19px;
+            margin-top: 35px;
+            margin-bottom: 40px;
+        }
+        h4 {
+            color: $orange;
+            display: inline-block;
+            margin-bottom: 40px; 
+                br {
+                    display: none;
+                }              
+        }
+        .icono-mail {
+            background-image: url("../images/icon-mail.png");
+            background-repeat: no-repeat;
+            width: 24px;
+            height: 16px;
+            display: inline-block;
+            margin-right: 10px;
+            margin-bottom: -2px;
+        }
+}
+
+.recuadro-exito {
+    box-shadow: 0 0 15px #e6e6e6;
+    border-radius: 9px;
+    padding-top: 16px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    margin-bottom: 40px;
+    display: flow-root;
+    position: relative;
+        p {
+            text-align: left;
+            font-size: 17px;
+            color: $dark-two;
+            padding-top: 0px;
+            padding-bottom: 28px;
+            margin-top: -8px;
+                span {
+                    color:$dark-64;
+                    padding-right: 10px;
+                        &.padding-right {
+                            padding-right: 20px;
+                        }
+                }
+        }
+        h1 {
+            color: $orange;
+            font-weight: normal;
+            font-size: 30px;
+            margin-top: 0px;
+        }
+        h3 {
+            font-size: 14px;
+            color:$dark-64;
+            margin-bottom: 10px;
+            margin-top: 7px;
+        }
+        a {
+            color: $orange;
+            font-weight: normal;
+            line-height: 28px;
+        }
+         .right-line {
+             border-right: 1px solid $dark-24;             
+         }
+         .icono-calendario {
+             background-image: url("../images/icon-calendar.png");
+             background-repeat: no-repeat;
+             width: 26px;
+             height: 26px;
+             float: left;
+             margin-top: -10px;
+             margin-right: 20px;
+             margin-left: 10px;
+         }
+         .icono-indicador-mapa {
+            background-image: url("../images/icon-place.png");
+            background-repeat: no-repeat;
+            width: 23px;
+            height: 30px;
+            float: left;
+            margin-top: -9px;
+            margin-right: 20px;
+            margin-left: 10px;
+         }
+         a.icono-impresora {
+            background-image: url("../images/icon-print.png");
+            background-repeat: no-repeat;
+            width: 28px;
+            height: 28px; 
+            float: right;
+            margin-right: 20px;
+         }
+       
+}

@@ -1,0 +1,204 @@
+.dropdown{
+	position: relative;
+	float: left;
+	width:100%;
+	margin-top: 40px;		
+		.btn.btn-dropdown{
+			width:100%;	
+			font-size: 17px;
+			text-transform: none;
+			font-weight: 300;
+			font-style: normal;
+			font-stretch: normal;
+			color: $dark-48;
+			padding-left: 0px;
+			background-color:#fff;
+			border-bottom:1px solid $dark-24;
+			border-radius:0px;
+			text-align:left;				
+				.caret{
+					margin-right:-10px;
+					margin-top:11px;
+					float:right;						
+				}
+				&.long-text {
+					overflow:hidden;
+    				white-space:nowrap;
+    				text-overflow: ellipsis; 
+    				height:38px; 
+    					&.special {
+    						overflow: hidden; 
+    						white-space: nowrap; 
+    						text-overflow: ellipsis;
+    							.caret {
+									margin-top: 2px; 						
+								}
+    					}    				  					
+				}
+				div {
+					overflow:hidden; 
+					white-space:nowrap;
+					text-overflow: ellipsis; 
+					margin-bottom: -15px;
+					+.caret {
+						margin-top: 1px; 
+						margin-bottom: 9px;
+					}
+				}
+		}
+		&.auto {
+			width:auto;	
+				.btn.btn-dropdown{
+					border-bottom:none;
+					outline: none;
+						.caret {						
+							display:none;												
+						}
+						.fa-angle-down:before {
+							color:$dark-48-two;
+							font-size: 25px;
+							position: absolute;
+    						top: 9px;
+							right: 2px;					
+						}				
+				}		
+				
+		}
+		&.info {
+			padding-left: 210px;
+				&:before {
+					content:"Soy residente tributario en";
+					font-size: 17px;
+   					left: -3px;
+   					top: 9px;
+   					position: absolute;
+					color:$dark-48;
+				}		
+		}	
+			
+}
+
+.dropdown-menu {
+	min-width:100%;
+	max-width: 100%;
+	z-index: 998;
+		&.long-text {
+			li {
+				overflow:hidden; 
+				white-space:nowrap;
+				text-overflow: ellipsis;
+			}
+		}
+		&.scroll {
+			overflow-x: auto;
+    		max-height: 100px;
+    		padding-right: 19px;
+		}
+		&.special {
+			width: calc(100% - 25px); 
+			margin: 0px 15px; 
+			overflow-y: scroll; 
+			max-height: 100px;
+			min-width:0px;
+				>li>a {
+					padding-right: 14px;
+					text-overflow: 
+					ellipsis;white-space: 
+					nowrap; overflow: hidden;
+				}
+		}
+}
+
+
+.dropdown-input {
+	.inputWrapper  {
+   		 width: 88%;
+		 z-index:2;
+		 	.inputArea{
+				.inputUnderline {
+					width: 114%;				
+				}
+				.cellphone-company-name {
+					font-size: 14px;
+    				left: 0px;
+    				top: -17px;
+    				position: absolute;
+    				color: rgba(21,28,41,0.48);
+    				letter-spacing: 0.4px;
+				}			
+			} 			
+	}	
+	&.info {
+		padding-left: 0px;
+		margin-top: 30px;
+			&:before {
+				content:"Soy residente tributario en";
+				font-size: 17px;
+   				left: 14px;
+   				top: 37px;
+   				position: absolute;
+				color:$dark-48;
+			}	
+	}
+	
+	.dropdown{
+		position: relative;
+		float: right;
+		width:100%;
+		margin-top: -36px;	
+			.btn.btn-dropdown{
+				border-bottom:none;
+					&:focus{
+						outline:none;					
+					}					
+			}
+			.dropdown-menu {
+				z-index:20;
+				width: 102%;				
+					&.scroll {
+						overflow-y: scroll; 
+						height:200px					
+					}			
+			}
+				
+	}	
+}
+
+
+.dropdown-menu {
+	>li {
+   		color: $dark-64;
+		padding-left:5px;
+		padding-top:2px;
+		padding-bottom:2px;
+		font-size:14px;
+		cursor:pointer;
+		display:block;
+		width:100%;	
+			&:hover {
+				background-color:#1594ff;
+				color:#fff;	
+			}
+			>a {
+				color: rgba(21,28,41,0.64);
+   				padding-left: 5px;
+  				padding-top: 2px;
+  				padding-bottom: 2px;
+  				font-size: 14px;
+   				cursor: pointer;
+  				display: block;
+   				width: 100%;
+					&:hover, &:focus {
+						background-color: #1594ff;
+   						text-decoration: none;
+   						color: #fff;					
+					}			
+			}
+	}	
+}
+
+#otraDireccion {
+	.dropdown-input {
+		margin-right: -9px;
+	}
+}

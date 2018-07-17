@@ -1,0 +1,25 @@
+.header-image{
+	background-color: $brown-grey-7;
+	margin-top:27px;
+	h1{
+		color:$orange;
+		padding: 40px 0;
+		font-size:32px;
+		margin-left:-18px;		
+	}
+	h2 {
+		font-size: 22px;
+		font-weight: 500;
+		font-style: normal;		
+		letter-spacing: 0.2px;		
+		color:$grey-dark;
+		padding-bottom: 10px;
+		margin-left: -18px;		
+	}
+}
+
+.headline {
+	h5, h4 {
+		display:none;	
+	}
+}

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Venta de Tarjetas Online</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="content/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="content/default.min.css" rel="stylesheet">
+    <link href="content/css/font-awesome.min.css" rel="stylesheet">
+    <script src="script/swiper.js"></script>
+
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <div class="fixed-header line margin">
+        <nav class="navbar navbar-inverse" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <a class="navbar-brand logoGalicia" href="#">&nbsp;</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div>
+                    <ul class="nav navbar-nav">
+                        <li class="done">
+                            <a href="#">
+                                <b>Ingresá</b>
+                                <br> tus datos</a>
+                        </li>
+                        <li class="done">
+                            <a href="#">
+                                <b>Elegí</b>
+                                <br> tu producto</a>
+                        </li>
+                        <li class="done">
+                            <a href="#">
+                                <b>Validá</b>
+                                <br> tus datos</a>
+                        </li>
+                        <li class="done">
+                            <a href="#">
+                                <b>Coordiná</b>
+                                <br> la entrega</a>
+                        </li>
+                        <li class="done">
+                            <a href="#">
+                                <b>Confirmá</b>
+                                <br> tu información</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+
+        <!-- Full Width Image Header -->
+
+
+    </div>
+
+    <!-- Page Content -->
+    <div class="container">
+        <div class="content xxx-small">
+            <div class="row">
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-2"></div>
+
+
+                <div class="col-xs-12 col-sm-12 col-md-10 col-lg-8">
+                    <div class="info-exito">
+                        <div class="row">
+                            <p class="icon icon-svg checkmark"></p>
+                            <h1>Bienvenido a Galicia, Juan Manuel.</h1>
+                            <h2>¡Tu solicitud fue exitosa!</h2>
+                            <h3>Para recibir tu producto recordá estar presente con DNI y fotocopia del mismo:</h3>
+
+
+                            <div class="recuadro-exito">
+                                <a href="#" class="icono-impresora"></a>
+
+                                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 right-line">
+                                    <h3>N° de solicitud</h3>
+                                    <h1>98794651</h1>
+                                    <a href="#">> ver seguimiento</a>
+                                    <div class="horizontal-line hidden-lg hidden-md hidden-sm"></div>
+
+                                </div>
+                                <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+                                    <div class="icono-calendario"></div>
+                                    <p>
+                                        <span>¿Cuándo?</span> Martes 01/05 - entre 13hs y 18hs</p>
+                                    <div class="icono-indicador-mapa"></div>
+                                    <p class="hidden-xs">
+                                        <span class="padding-right">¿Dónde?</span> Avellaneda, Av. Mitre 300. Piso 6 Depto A</p>
+                                    <p class="hidden-lg hidden-md hidden-sm">
+                                        <span class="padding-right">¿Dónde?</span> Avellaneda, Av. Mitre 300.</p>
+                                </div>
+                            </div>
+
+                            <div class="icono-mail"></div>
+                            <h4>Te enviamos un e-mail con toda la <br /> información de tu solicitud.</h4>
+
+                            <div class="customer-effort" id="calificacion">
+                                <div class="content-customer">
+                                    <p id="title">¿Qué te pareció esta nueva forma de operar?</p>
+                                    <p id="subtitle" class=" push-left hidden">Tu valoración:</p>
+                                    <fieldset class="rating faces">                                        
+                                        <input type="radio" id="star4" name="rating" value="4" />
+                                        <label class="full-4" for="star4"></label>
+                                        <input type="radio" id="star3" name="rating" value="3" />
+                                        <label class="full-3" for="star3"></label>
+                                        <input type="radio" id="star2" name="rating" value="2" />
+                                        <label class="full-2" for="star2"></label>
+                                        <input type="radio" id="star1" name="rating" value="1" />
+                                        <label class="full-1" for="star1"></label>
+                                    </fieldset>
+                                    <div class="clearfix"></div>
+
+
+                                    <div class="comment hidden">
+                                        <div class="inputWrapper">
+                                            <div class="inputArea open">
+                                                <label class="inputTitle"></label>
+                                                <input type="mail" name="handle" id="handle2" required autocapitalize="none" autocomplete="off" autofocus class="form-control">
+                                                <label for="handle" class="inputLabel" id="pregunta">¿Qué podríamos mejorar?</label>
+                                                <div class="inputUnderline"></div>
+                                            </div>
+                                            <div class="extraInfo">
+                                                <span id="extraMessage"></span>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-caps" onClick="javascript:mostrarAgradecimiento()">Enviar</button>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                            <div class="thanks-text" id="thanks" style="display:none">
+                                <p>
+                                    <span>¡Muchas gracias por tu respuesta!</span> Tu opinión nos ayuda a mejorar.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hidden-xs hidden-sm col-md-1 col-lg-2"></div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- /.container -->
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <p>Banco Galicia</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="script/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="script/bootstrap.min.js"></script>
+    <script src="script/main.js"></script>
+
+
+    <script type="text/javascript">
+        if ($(".customer-effort").length > 0) {
+            $('.customer-effort a.icon-close').on('click', function (event) {
+                event.preventDefault();
+                $('.customer-effort').remove();
+            });
+
+            $('.customer-effort fieldset input').on('click', function (event) {
+                console.log();
+                $('.customer-effort #title').addClass('hidden');
+                $('.customer-effort #subtitle').removeClass('hidden');
+                $('.customer-effort .comment').removeClass('hidden');
+                var msj = "¿Qué podríamos mejorar?"
+                if (this.value == 4) {
+                    var msj = "Contanos por qué"
+                }
+                $('.customer-effort .inputLabel').html(msj);
+            });
+        }
+
+        $("#handle2").on('keyup', function (e) {
+            if ($(this).val() === "") {
+                $("#pregunta").show();
+            } else {
+                $("#pregunta").hide();
+            }
+        });
+
+
+        function mostrarAgradecimiento() {
+
+            if (document.getElementById("thanks").style.display == 'none') {
+                document.getElementById("thanks").style.display = '';
+                document.getElementById("calificacion").style.display = 'none';
+            }
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>

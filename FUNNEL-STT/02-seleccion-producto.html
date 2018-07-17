@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Venta de Tarjetas Online</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="content/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="content/default.min.css" rel="stylesheet">
+  <link href="content/css/font-awesome.min.css" rel="stylesheet">
+  <script src="script/swiper.js"></script>
+
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <div class="fixed-header">
+    <nav class="navbar navbar-inverse" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <a class="navbar-brand logoGalicia" href="#">&nbsp;</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div>
+          <ul class="nav navbar-nav">
+            <li class="checked">
+              <a href="#">
+                <b>Ingresá</b>
+                <br> tus datos</a>
+            </li>
+            <li class="active-menu">
+              <a href="#">
+                <b>Elegí</b>
+                <br> tu producto</a>
+            </li>
+            <li>
+              <a href="#">
+                <b>Validá</b>
+                <br> tus datos</a>
+            </li>
+            <li>
+              <a href="#">
+                <b>Coordiná</b>
+                <br> la entrega</a>
+            </li>
+            <li>
+              <a href="#">
+                <b>Confirmá</b>
+                <br> tu información</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
+    </nav>
+
+    <!-- Full Width Image Header -->
+    <header class="header-image">
+      <div class="headline">
+        <div class="container">
+          <h2>Conocé nuestra propuesta.</h2>
+        </div>
+      </div>
+    </header>
+
+  </div>
+
+  <!-- Page Content -->
+  <div class="container">
+    <div class="content xx-small">
+      <div class="row">
+        <div class="hidden-xs hidden-sm col-md-1 col-lg-2"></div>
+
+
+
+        <div class="col-xs-12 col-sm-12 col-md-10 col-lg-8">
+          <div class="row">
+            <div class="titulo-seleccion-producto">
+              <div class="col-xs-8 col-sm-9 col-md-10 col-lg-10">
+                <h1>Servicio Galicia
+                  <br />
+                  <b>Classic</b>
+                </h1>
+              </div>
+              <div class="col-xs-4 col-sm-3 col-md-2 col-lg-2">
+                <div class="seleccion-producto-tarjeta-triple" style="background-image:url(images/tarjeta-classic.png)"></div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="seleccion-producto-productos">
+              <div class="col-xs-11 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-12 col-md-offset-0 col-lg-12 col-lg-offset-0">
+                <a href="#" class="line" id="limites" onClick="javascript:mostrarOcultarLimitesTarjetaUno()">Tarjeta de Crédito Visa Internacional</a>
+              </div>
+
+              <div class="col-xs-11 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-12 col-md-offset-0 col-lg-12 col-lg-offset-0" id="limitesTarjetaUno"
+                style="display:none">
+                <div class="row">
+                  <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                    <h5>Límite</h5>
+                  </div>
+                  <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                    <h5>en cuotas</h5>
+                    <h4>$70.000</h4>
+                  </div>
+                  <div class="col-xs-4 col-sm-6 col-md-6 col-lg-6">
+                    <h5>en un pago</h5>
+                    <h4>$70.000</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xs-11 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-12 col-md-offset-0 col-lg-12 col-lg-offset-0">
+                <a href="#" class="line" id="limites2" onClick="javascript:mostrarOcultarLimitesTarjetaDos()">Tarjeta de Crédito Mastercard Internacional</a>
+              </div>
+              <div class="col-xs-11 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-12 col-md-offset-0 col-lg-12 col-lg-offset-0" id="limitesTarjetaDos"
+                style="display:none">
+                <div class="row">
+                  <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                    <h5>Límite</h5>
+                  </div>
+                  <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                    <h5>en cuotas</h5>
+                    <h4>$70.000</h4>
+                  </div>
+                  <div class="col-xs-4 col-sm-6 col-md-6 col-lg-6">
+                    <h5>en un pago</h5>
+                    <h4>$70.000</h4>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-xs-11 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-12 col-md-offset-0 col-lg-12 col-lg-offset-0">
+                <p>Tarjeta de Débito</p>
+              </div>
+              <div class="col-xs-11 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-12 col-md-offset-0 col-lg-12 col-lg-offset-0">
+                <p>Cajas de Ahorro en pesos y dólares</p>
+              </div>
+              <div class="col-xs-11 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-12 col-md-offset-0 col-lg-12 col-lg-offset-0">
+                <p>Cuenta Corriente</p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="row hidden-xs">
+            <div class="col-xs-12">
+              <div class="seleccion-producto-boton">
+                <a href="03-validacion-datos.html">
+                  <button type="button" class="btn btn-xs">Solicitar</button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="seleccion-producto-precio">
+
+              <div class="col-xs-3 col-sm-5 col-md-5 col-lg-5">
+                <div class="row">
+                  <div class="hidden-xs col-sm-4 col-md-4 col-lg-4"></div>
+                  <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                    <h3>
+                      <span class="line-through">
+                        <span class="grey">$</span>520</span>
+                    </h3>
+                    <p class="hidden-xs hidden-sm">mensuales (iva incluido)</p>
+                    <p class="hidden-lg hidden-md">mensuales</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xs-9 col-sm-7 col-md-7 col-lg-7">
+                <h4>Mantenimiento 100% bonificado*</h4>
+                <a href="#" data-toggle="modal" data-target="#modalTerminosClassic">> Ver condiciones</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="seleccion-producto-beneficios hidden-xs">
+              <div class="col-xs-12">
+                <h3 class="hidden-xs">Disfrutá de estos beneficios:</h3>
+                <div class="row">
+                  <div class="col-xs-6">
+                    <span class="imagen-programa-quiero"></span>
+                    <h4>Programa Quiero!</h4>
+                    <p>Sumá puntos con tus consumos.</p>
+
+                  </div>
+                  <div class="col-xs-6 hidden-xs">
+                    <span class="imagen-promociones"></span>
+                    <h4>Promociones todos los días</h4>
+                    <p>Con todas tus Tarjetas Galicia.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="carousel fade-carousel slide hidden-sm hidden-md hidden-lg" data-ride="carousel" data-interval="4000" id="bs-carousel"
+            style="height:50px">
+            <div class="overlay"></div>
+
+            <div class="carousel-inner margin-left-5">
+
+              <div class="item slides active">
+                <div class="slide-1 beneficios"></div>
+                <div class="beneficios">
+                  <div class="imagen imagen1"></div>
+                  <h4>Programa Quiero!</h4>
+                  <p>Sumá puntos con tus consumos.</p>
+                </div>
+              </div>
+
+              <div class="item slides">
+                <div class="slide-2 beneficios"></div>
+                <div class="beneficios">
+                  <div class="imagen imagen2"></div>
+                  <h4>Promociones todos los días</h4>
+                  <p>Con todas tus Tarjetas Galicia.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+          <div class="row hidden-sm hidden-md hidden-lg">
+            <div class="col-xs-12">
+              <div class="seleccion-producto-boton">
+                <a href="03-validacion-datos.html">
+                  <button type="button" class="btn btn-xs">Solicitar</button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <a name="Ancla" id="a"></a>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="seleccion-producto-boton">
+                <a href="#Ancla" class="slide" onclick="javascript:mostrarSlider();">
+                  <button type="button" class="btn white btn-xs">Ver otras ofertas
+                    <i class="fa fa-angle-right" id="flechaOtrasOfertas"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="hidden-xs hidden-sm col-md-1 col-lg-2"></div>
+      </div>
+    </div>
+
+    <div id="slideOtrasOfertas" class="hiddenSlide">
+      <div class="row">
+        <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+          <!-- Swiper -->
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <div class="row">
+                  <div class="col-xs-12 margin-left-swiper">
+
+
+                    <div class="swiper-otras-ofertas">
+                      <div class="contenido">
+
+                        <div class="row">
+                          <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+                            <h3>Servicio Galicia
+                              <br />
+                              <span class="color-orange">Simple</span>
+                            </h3>
+                          </div>
+                          <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+                            <div class="swiper-otras-ofertas-imagen-doble" style="background-image:url(images/tarjeta-simple.png)"></div>
+                          </div>
+                          <div class="col-xs-12 long-line"></div>
+                        </div>
+                        <div class="row">
+                          <div class="col-xs-12 padding-left-30 margin-top-40">
+                            <h4>Tarjeta de Crédito Visa</h4>
+                            <div class="row">
+                              <div class="col-xs-3 padding-right-none">
+                                <p>Límite</p>
+                              </div>
+                              <div class="col-xs-4 padding-right-none">
+                                <p>en cuotas</p>
+                                <h5>$70.000</h5>
+                              </div>
+                              <div class="col-xs-5">
+                                <p>en un pago</p>
+                                <h5>$70.000</h5>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-xs-12 padding-left-30">
+                            <h4>Tarjeta de Débito</h4>
+                          </div>
+                          <div class="col-xs-12 padding-left-30">
+                            <h4>Cajas de Ahorro en pesos y dólares</h4>
+                          </div>
+                          <div class="col-xs-12 small-line"></div>
+                        </div>
+
+                        <div class="row">
+                          <div class="precios">
+                            <div class="col-xs-5">
+                              <h2>
+                                <span class="line-through">
+                                  <span class="grey">$</span>305</span>
+                              </h2>
+                              <p>mensuales</p>
+                            </div>
+                            <div class="col-xs-7">
+                              <h3>Mantenimiento</h3>
+                              <h4>100% bonificado.</h4>
+                              <a href="#" data-toggle="modal" data-target="#modalTerminosSimple">> Ver condiciones</a>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <div class="row">
+                        <div class="col-xs-12">
+                          <a href="#">
+                            <button type="button" class="btn btn-xs">Solicitar</button>
+                          </a>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="swiper-slide">
+                <div class="row">
+                  <div class="col-xs-12 margin-left-swiper">
+                    <div class="swiper-otras-ofertas">
+
+                      <div class="contenido">
+                        <div class="row">
+                          <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+                            <h3>Tarjeta de Crédito
+                              <br />
+                              <span class="color-orange">Internacional</span>
+                            </h3>
+                          </div>
+                          <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+                            <div class="swiper-otras-ofertas-imagen-simple" style="background-image:url(images/tarjeta-internacional.png)"></div>
+                          </div>
+                          <div class="col-xs-12 long-line"></div>
+                        </div>
+
+
+                        <div class="row margin-top-15">
+                          <div class="col-xs-6 text-align-center">
+                            <label class="control radiobutton inline-block">
+                              <div class="logo-visa"></div>
+                              <input type="radio" name="radio" id="radio">
+                              <div class="radiobutton-indicator"></div>
+                            </label>
+                          </div>
+                          <div class="col-xs-6 text-align-center">
+                            <label class="control radiobutton inline-block">
+                              <div class="logo-mastercard"></div>
+                              <input type="radio" name="radio" id="radio">
+                              <div class="radiobutton-indicator"></div>
+                            </label>
+                          </div>
+                        </div>
+
+
+                        <div class="row">
+                          <div class="col-xs-12 padding-left-30">
+                            <h4>Tarjeta de Crédito Visa</h4>
+                            <div class="row">
+                              <div class="col-xs-3 padding-right-none">
+                                <p>Límite</p>
+                              </div>
+                              <div class="col-xs-4 padding-right-none">
+                                <p>en cuotas</p>
+                                <h5>$70.000</h5>
+                              </div>
+                              <div class="col-xs-5">
+                                <p>en un pago</p>
+                                <h5>$70.000</h5>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-xs-12 small-line"></div>
+                        </div>
+
+                        <div class="row">
+                          <div class="precios">
+                            <div class="col-xs-5">
+                              <h2>
+                                <span class="line-through">
+                                  <span class="grey">$</span>305</span>
+                              </h2>
+                              <p>mensuales</p>
+                            </div>
+                            <div class="col-xs-7">
+                              <h3>Mantenimiento</h3>
+                              <h4>100% bonificado.</h4>
+                              <a href="#" data-toggle="modal" data-target="#modalTerminosInternacional">> Ver condiciones</a>
+                            </div>
+                            <div class="col-xs-12 small-line"></div>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="precios">
+                            <div class="col-xs-5">
+                              <h2>
+                                <span class="line-through">
+                                  <span class="grey">$</span>1650</span>
+                              </h2>
+                            </div>
+                            <div class="col-xs-7">
+                              <h3 class="margin-top-0">Renovación anual</h3>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <div class="row">
+                        <div class="col-xs-12">
+                          <a href="#">
+                            <button type="button" class="btn btn-xs">Solicitar</button>
+                          </a>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+
+            <div class="swiper-button-next only-desktop-tablet"></div>
+            <div class="swiper-button-prev only-desktop-tablet"></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  </div>
+  </div>
+
+  <!-- /.container -->
+
+
+  <!-- Modal terminos Classic -->
+  <div id="modalTerminosClassic" class="modal fade modalAdicionalPaquete" role="dialog">
+    <div class="modal-dialog additional">
+
+      <!-- Modal content-->
+      <div class="modal-content seleccion-producto">
+        <div class="modal-header small">
+          <button type="button" class="close" data-dismiss="modal"></button>
+          <h4 class="modal-title padding-left-none">Servicio Galicia Classic</h4>
+        </div>
+
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 border-right">
+              <h1>
+                <span class="line-through">
+                  <span class="grey">$</span>520</span>
+              </h1>
+              <h5>mensuales (IVA incluido)</h5>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+              <h2>Mantenimiento</h2>
+              <h2 class="coloured">100% bonificado*</h2>
+            </div>
+
+            <div class="col-xs-6 hidden-xs"></div>
+          </div>
+
+          <div class="scroll-text-mobile">
+            <h3>Condiciones</h3>
+            <p>*Primeros 6 meses de vigencia desde el alta del servicio: 100% de bonificación. A partir del 7mo mes de vigencia
+              del servicio: 100% de bonificación si se cumple un consumo mensual requerido de $35.000. Con sus Tarjetas de
+              Crédito y/o Débito Galicia.
+              <br />
+              <br /> Cartera de consumo. Sujeta a previa verificación comercial, crediticia y cumplimiento de requisitos legales.
+              Válido en el país hasta el 30/06/2018. En tarjetas de crédito se computa a la fecha de cierre los consumos
+              del titular y todos los adicionales de la cuenta del titular en un pago, las cuotas a medida que se acrediten,
+              los débitos automáticos y los consumos de tarjetas de crédito en la moneda dólar se toman a una cotización
+              en pesos, al tipo de cambio vendedor del banco nación del cierre del mes de dicho consumo. Se excluyen los
+              saldos financiados, cargos de resumen, cargos de renovación de tarjeta, gastos de mantenimiento, intereses,
+              adelantos en efectivo, los cargos negativos, la carga de tarjetas de regalo y el servicio de asistencia al
+              viajero. Se restan los desconocimientos o devoluciones y anulaciones de compras. En la tarjeta de débito se
+              toman los consumos realizados según mes calendario. El mes que no cumpla la condición no accede al beneficio.
+              Los requisitos para gozar del beneficio podrán variar en cualquier momento, conforme decisión del banco Galicia,
+              lo que se notificará al cliente mediante extracto, carta y/o mail. Ver comisión de mantenimiento mensual vigente
+              en www.bancogalicia.com.ar *los servicios están conformados por una cuenta corriente y/o caja de ahorros en
+              dólar, una o más tarjetas de débito y una o más tarjetas de crédito. Las cajas de ahorro no tienen costo. Consulte
+              vigencia y condiciones en www.bancogalicia.com.ar
+            </p>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Modal terminos Simple -->
+  <div id="modalTerminosSimple" class="modal fade modalAdicionalPaquete" role="dialog">
+    <div class="modal-dialog additional">
+
+      <!-- Modal content-->
+      <div class="modal-content seleccion-producto">
+        <div class="modal-header small">
+          <button type="button" class="close" data-dismiss="modal"></button>
+          <h4 class="modal-title padding-left-none">Servicio Galicia Simple</h4>
+        </div>
+
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 border-right">
+              <h1>
+                <span class="line-through">
+                  <span class="grey">$</span>305</span>
+              </h1>
+              <h5>mensuales (IVA incluido)</h5>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+              <h2>Mantenimiento</h2>
+              <h2 class="coloured">100% bonificado*</h2>
+            </div>
+
+            <div class="col-xs-6 hidden-xs"></div>
+          </div>
+
+          <div class="scroll-text-mobile">
+            <h3>Condiciones</h3>
+            <p>*Primeros 6 meses de vigencia desde el alta del servicio: 100% de bonificación. A partir del 7mo mes de vigencia
+              del servicio: 100% de bonificación si se cumple un consumo mensual requerido de $35.000. Con sus Tarjetas de
+              Crédito y/o Débito Galicia.
+              <br />
+              <br /> Cartera de consumo. Sujeta a previa verificación comercial, crediticia y cumplimiento de requisitos legales.
+              Válido en el país hasta el 30/06/2018. En tarjetas de crédito se computa a la fecha de cierre los consumos
+              del titular y todos los adicionales de la cuenta del titular en un pago, las cuotas a medida que se acrediten,
+              los débitos automáticos y los consumos de tarjetas de crédito en la moneda dólar se toman a una cotización
+              en pesos, al tipo de cambio vendedor del banco nación del cierre del mes de dicho consumo. Se excluyen los
+              saldos financiados, cargos de resumen, cargos de renovación de tarjeta, gastos de mantenimiento, intereses,
+              adelantos en efectivo, los cargos negativos, la carga de tarjetas de regalo y el servicio de asistencia al
+              viajero. Se restan los desconocimientos o devoluciones y anulaciones de compras. En la tarjeta de débito se
+              toman los consumos realizados según mes calendario. El mes que no cumpla la condición no accede al beneficio.
+              Los requisitos para gozar del beneficio podrán variar en cualquier momento, conforme decisión del banco Galicia,
+              lo que se notificará al cliente mediante extracto, carta y/o mail. Ver comisión de mantenimiento mensual vigente
+              en www.bancogalicia.com.ar *los servicios están conformados por una cuenta corriente y/o caja de ahorros en
+              dólar, una o más tarjetas de débito y una o más tarjetas de crédito. Las cajas de ahorro no tienen costo. Consulte
+              vigencia y condiciones en www.bancogalicia.com.ar
+            </p>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal terminos Internacional -->
+  <div id="modalTerminosInternacional" class="modal fade modalAdicionalPaquete" role="dialog">
+    <div class="modal-dialog additional">
+
+      <!-- Modal content-->
+      <div class="modal-content seleccion-producto">
+        <div class="modal-header small">
+          <button type="button" class="close" data-dismiss="modal"></button>
+          <h4 class="modal-title padding-left-none">Tarjeta de Crédito Internacional</h4>
+        </div>
+
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 border-right">
+              <h1>
+                <span class="line-through">
+                  <span class="grey">$</span>305</span>
+              </h1>
+              <h5>mensuales (IVA incluido)</h5>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+              <h2>Mantenimiento</h2>
+              <h2 class="coloured">100% bonificado*</h2>
+            </div>
+
+            <div class="col-xs-6 hidden-xs"></div>
+          </div>
+
+          <div class="scroll-text-mobile">
+            <h3>Condiciones</h3>
+            <p>*Primeros 6 meses de vigencia desde el alta del servicio: 100% de bonificación. A partir del 7mo mes de vigencia
+              del servicio: 100% de bonificación si se cumple un consumo mensual requerido de $35.000. Con sus Tarjetas de
+              Crédito y/o Débito Galicia.
+              <br />
+              <br /> Cartera de consumo. Sujeta a previa verificación comercial, crediticia y cumplimiento de requisitos legales.
+              Válido en el país hasta el 30/06/2018. En tarjetas de crédito se computa a la fecha de cierre los consumos
+              del titular y todos los adicionales de la cuenta del titular en un pago, las cuotas a medida que se acrediten,
+              los débitos automáticos y los consumos de tarjetas de crédito en la moneda dólar se toman a una cotización
+              en pesos, al tipo de cambio vendedor del banco nación del cierre del mes de dicho consumo. Se excluyen los
+              saldos financiados, cargos de resumen, cargos de renovación de tarjeta, gastos de mantenimiento, intereses,
+              adelantos en efectivo, los cargos negativos, la carga de tarjetas de regalo y el servicio de asistencia al
+              viajero. Se restan los desconocimientos o devoluciones y anulaciones de compras. En la tarjeta de débito se
+              toman los consumos realizados según mes calendario. El mes que no cumpla la condición no accede al beneficio.
+              Los requisitos para gozar del beneficio podrán variar en cualquier momento, conforme decisión del banco Galicia,
+              lo que se notificará al cliente mediante extracto, carta y/o mail. Ver comisión de mantenimiento mensual vigente
+              en www.bancogalicia.com.ar *los servicios están conformados por una cuenta corriente y/o caja de ahorros en
+              dólar, una o más tarjetas de débito y una o más tarjetas de crédito. Las cajas de ahorro no tienen costo. Consulte
+              vigencia y condiciones en www.bancogalicia.com.ar
+            </p>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <p>Banco Galicia</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- jQuery -->
+  <script src="script/jquery.js"></script>
+
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="script/bootstrap.min.js"></script>
+  <script src="script/main.js"></script>
+
+
+  <script type="text/javascript">
+    function mostrarOcultarLimitesTarjetaUno() {
+
+      if (document.getElementById("limitesTarjetaUno").style.display == 'none') {
+        document.getElementById("limitesTarjetaUno").style.display = '';
+        document.getElementById("limites").className = "line-expanded";
+      } else {
+        document.getElementById("limitesTarjetaUno").style.display = 'none';
+        document.getElementById("limites").className = "line";
+      }
+    }
+
+
+    function mostrarOcultarLimitesTarjetaDos() {
+
+      if (document.getElementById("limitesTarjetaDos").style.display == 'none') {
+        document.getElementById("limitesTarjetaDos").style.display = '';
+        document.getElementById("limites2").className = "line-expanded";
+      } else {
+        document.getElementById("limitesTarjetaDos").style.display = 'none';
+        document.getElementById("limites2").className = "line";
+      }
+    }
+  </script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    function mostrarSlider() {
+
+      $("#slideOtrasOfertas").addClass("visibleSlide")
+      $("#slideOtrasOfertas").removeClass("hiddenSlide")
+      $("#flechaOtrasOfertas").addClass("fa-angle-right")
+      $("#flechaOtrasOfertas").addClass("fa-angle-down")
+      cargarSlider();
+    }
+
+    function cargarSlider() {
+
+      var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+          // when window width is <= 320px
+          320: {
+            slidesPerView: 'auto',
+            spaceBetween: 2
+          },
+          // when window width is <= 480px
+          480: {
+            slidesPerView: 'auto',
+            spaceBetween: 2
+          },
+          // when window width is <= 640px
+          640: {
+            slidesPerView: 'auto',
+            spaceBetween: 2
+          }
+        }
+      });
+
+    }
+  </script>
+
+</body>
+
+</html>

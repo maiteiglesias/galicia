@@ -1,0 +1,248 @@
+
+
+body.modal-open {
+    overflow: hidden;
+    position: fixed;    
+}
+
+body.modal-open .banner-digitalizacion {
+	position: fixed;
+}
+
+.modal-header {
+	padding-left: 10%;
+}
+
+.modal-body {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.modal-footer {
+	padding-left: 10%;
+}
+
+.modal-content{
+	width: 90%;
+    margin:auto;
+    margin-top: 35%;
+    	.modal-header{
+        	border: none;
+       			h3{
+           			font-size: 17px;
+            		margin: 10px 0;
+       		    }
+        	   .description{
+               	    color: $dark;
+                    font-size: 17px;
+                }
+               .modal-body{
+                    padding-top: 0;
+                }
+	  }
+	  &.terms-conditions {
+			width: 100%;
+				.modal-body {
+					height:500px;
+					overflow-y: scroll;									
+				}
+	  }
+}
+
+.modal-footer{
+    border: none;    
+    text-align: center; 
+    padding-left:0px; 
+    padding-right:0px;
+}
+
+
+.modal.oferta{
+	.modal-content{
+		background-color:transparent;
+		width: 100%;
+		margin-top: 0;
+		box-shadow: none;
+		border: none;
+			&.one-option {
+				width: 53%;	
+				margin-left: 0px;
+			}
+			&.two-options {
+				width: 53%;				
+				 .close {
+				 	right: 12px;				 
+				 }				
+			}
+			&.three-options {
+				width: 80%;	
+			}
+	}
+
+	.modal-dialog{
+		width: 100%;
+		max-width: 1280px;			
+	}
+
+	.pop-up-offer{
+		background-color: #FFF;
+	}
+	.modal-header .close {
+    	margin-top: 12px;
+   		position: absolute;
+   		right: 11px;
+   		top: 20px;
+   		z-index: 100;
+		width: 32px;
+ 		height: 32px;
+		background-color:#fff;
+		opacity: 10;
+		border-radius: 15px;
+		border: solid 1px $white-three;
+		padding-left: 2px;
+		padding-bottom: 1px;
+		color:$greyish-brown;
+	}
+
+}
+
+.modal-dialog {
+	&.additional {
+		width:60%;	
+	}
+	&.phone-code{
+		width: 680px;
+	}
+	&.small {
+		width: 20%;
+	}
+ 	&.medium{
+		width: 30%;
+	}
+}
+
+
+.modal#modalAdicionalPaquete, .modal.modalAdicionalPaquete {
+	.modal-content {
+		margin-top: 15%;
+			.modal-header {
+				background-color:$white-five;
+				height:100px;
+	 				.close {
+    					margin-top: 12px;
+   						position: absolute;
+   						right: -12px;
+   						top: -24px;
+   						z-index: 100;
+						width: 32px;
+ 						height: 32px;
+						background-color:#fff;
+						opacity: 10;
+						border-radius: 15px;
+						border: solid 1px $white-three;
+						padding-left: 2px;
+						padding-bottom: 1px;
+						color:$greyish-brown;
+					}
+					.modal-title {
+						font-size: 26px;
+ 						font-weight: 300;
+						color:$greyish-brown;							
+						padding-top:16px;
+						padding-left: 15px;
+							br {
+								display:none;							
+							}
+							&.two-lines {
+								padding-top:6px;
+							}		
+					}
+					h5 {
+						display:none;					
+					}
+					p {
+						padding-left:15px;
+						font-size: 15px;
+						color: $greyish-brown;					
+					}
+			}
+			.modal-body {
+				padding-left:10%;
+					h3 {
+						font-size: 17px;
+ 						font-weight: bold;
+						color: $greyish-brown;					
+					}
+					h4 {
+						font-size: 17px; 						
+						color: $greyish-brown;					
+					}
+					.radioTitle {
+						 margin-bottom: -22px;											
+					}	
+			}
+			.modal-footer {				
+					a {
+						color:#333;
+						font-size:14px;
+						text-decoration:underline;
+						color:$dark;					
+					}
+			}
+		}
+}
+
+.scroll-text {
+	width: 90%; 
+	overflow-x: hidden; 
+	height: 370px; 
+	overflow-y: auto;
+	-webkit-overflow-scrolling:touch;
+	padding-right: 15px;	
+}
+
+.phone-code-number {
+	margin-top:30px;
+}
+
+.mapa-modal {
+	 background-image: url(../images/mapa-modal.png);
+	 background-position: center;
+	 height: 200px;
+	 border-radius: 14px 14px 0 0;
+}
+
+
+
+.modal.modalAdicionalPaquete .modal-content {
+	.modal-body {
+			&.mapa {
+				padding: 0px;
+				margin: 0px;
+				text-align: center;
+				p {
+					font-size: 15px;
+				}
+				h3 {
+					font-size: 23px;
+				}				
+			}
+	}
+	.modal-footer {
+		&.mapa { 
+			.btn.btn-xs {
+				width: 150px;
+				text-transform: none;
+				font-size: 18px;
+			}
+			a {
+				color:$grey-medium-2;
+				text-decoration: none;
+				line-height: 49px;
+				font-size: 17px;
+				font-weight: normal;				
+			}
+		}		
+	}
+}
+

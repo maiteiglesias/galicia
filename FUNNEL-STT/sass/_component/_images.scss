@@ -1,0 +1,389 @@
+.logoGalicia {
+	width: 140px;
+	height: 36px;
+	background-image: url("../images/logoGalicia.svg");
+	background-repeat:no-repeat;
+	cursor: default;
+}
+
+.contenedor-banner-landing {
+	background-image: url("../images/banner-landing-fragmento.png");
+	height: 336px;
+}
+
+.banner-landing {
+	width: 100%;
+	height: 334px;
+	background-image: url(../images/banner-landing.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	margin-top: 0px;
+	position: relative;	
+	padding-top: 58px;
+		h5 {
+			padding-top: 50px;		
+			font-size: 46px;
+			font-weight: bold;			
+			line-height: 1.04;
+			letter-spacing: 0.5px;			
+			color: $grey-dark;
+			font-family: 'PTSans-Bold' !important;
+		}
+		p {
+			padding-top: 10px;
+			font-size: 24px;			
+			line-height: 1.33;
+			letter-spacing: 0.5px;
+			color: $grey-medium;
+			position: relative;
+		}
+		.numerito {			 
+			  font-size: 15px;
+			  font-weight: normal;			  
+			  line-height: 2.13;
+			  letter-spacing: 0.5px;
+			  text-align: left;
+			  color: $grey-medium;
+			  position: absolute;			  
+			  left: 288px;
+			  top: 3px;
+		}	
+}
+
+.contenedor-banner-landing-nieve {
+	padding-top: 17px;
+}
+
+.banner-landing-nieve {
+	width: 100%;
+	height: 334px;
+	background-image: url(../images/banner-nieve.png);
+	background-size: cover;
+	background-origin: content-box;
+	background-repeat: no-repeat;
+	background-position: top;
+	margin-top: 0px;
+	position: relative;
+	padding-top: 58px;	
+	h5 {
+		padding-top: 80px;
+		font-size: 46px;
+		font-weight: bold;
+		line-height: 1.04;
+		letter-spacing: 0.5px;
+		color: $grey-dark;
+		font-family: 'PTSans-Bold' !important;
+	}
+	p {
+		padding-top: 10px;
+		font-size: 24px;
+		line-height: 1.33;
+		letter-spacing: 0.5px;
+		color: $grey-dark;
+		position: relative;
+	}
+	.numerito {
+		font-size: 15px;
+		font-weight: normal;
+		line-height: 2.13;
+		letter-spacing: 0.5px;
+		text-align: left;
+		color: $grey-medium;
+		position: absolute;
+		left: 288px;
+		top: 3px;
+	}
+}
+
+.contenedor-banner-landing-playa {
+	padding-top: 17px;
+}
+
+.banner-landing-playa {
+	width: 100%;
+	height: 334px;
+	background-image: url(../images/banner-playa.png);
+	background-size: cover;
+	background-origin: content-box;
+	background-repeat: no-repeat;
+	background-position: top;
+	margin-top: 0px;
+	position: relative;
+	padding-top: 58px;
+	z-index: 1;
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.2);
+		z-index: -1;
+	}
+	h5 {
+		padding-top: 67px;
+		font-size: 46px;
+		font-weight: bold;
+		line-height: 1.04;
+		letter-spacing: 0.5px;
+		color: #fff;
+		font-family: 'PTSans-Bold' !important;
+	}
+	p {
+		padding-top: 10px;
+		font-size: 24px;
+		line-height: 1.33;
+		letter-spacing: 0.5px;
+		color: #fff;
+		position: relative;
+	}
+	.numerito {
+		font-size: 15px;
+		font-weight: normal;
+		line-height: 2.13;
+		letter-spacing: 0.5px;
+		text-align: left;
+		color: $grey-medium;
+		position: absolute;
+		left: 288px;
+		top: 3px;
+	}
+}
+
+.banner-digitalizacion {
+	width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.8);
+    background-image: url(../images/banner-digitalizacion.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;   
+    margin-top: 0;
+    padding-top: 58px;
+    position: absolute;
+    z-index: 1;    
+    overflow: hidden;
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0, 0, 0, 0.4);
+			z-index: -1;
+		}
+		h1 {
+			font-family: 'PTSans-Bold' !important;
+			text-align: center;
+			color: #fff;
+			padding-top: 102px;
+			font-size: 50px;				
+		}
+		h2 {
+			font-family: 'PTSans-Regular' !important;
+			text-align: center;
+			color: #fff;
+			font-size: 50px;
+			padding-top: 10px;
+			padding-bottom: 15px;
+			line-height: 60px;
+		}
+}
+
+.oferta-principal-card-doble {
+	width: 277px;
+	height: 213px;
+	margin-top: 20px;
+	margin-bottom:20px;	
+	background-repeat: no-repeat;
+}
+
+.oferta-principal-card-single {
+	width: 269px;
+	height: 185px;
+	margin-top: 20px;
+	margin-bottom:10px;	
+	background-repeat: no-repeat;
+}
+
+.oferta-products-cards{
+	width: 154px;
+	height: 103px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.oferta-pop-up-card-single {
+	width: 100%;
+	height: 145px;
+	background-size: contain;
+	margin-top: 17px;
+    margin-bottom: 15px;
+    background-repeat: no-repeat; 
+    background-position: center;
+    margin-left: -10px;    	   
+}
+
+.oca-pop-up-card-single {
+	width: 153px;
+	height: 103px;
+	background-size: cover;	
+    margin-bottom: 15px;
+    background-repeat: no-repeat;
+}
+
+.oca-pop-up-card-doble {
+	width: 159px;
+	height: 112px;
+	background-size: cover;	
+    margin-bottom: 15px;
+    background-repeat: no-repeat;
+}
+
+.oferta-pop-up-card-doble {
+	width: 100%;
+	height: 177px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+    margin-left: -10px; 
+}
+
+.logo-mastercard {
+	width: 53px;
+	height: 39px;
+	background-image: url("../images/logo-mastecard.png");
+}
+
+.logo-visa {
+	width: 53px;
+	height: 39px;
+	background-image: url("../images/logo-visa.png");
+}
+
+.icon-svg {
+    background-repeat: no-repeat;
+    width: 144px;
+    height: 144px;
+    margin: auto;
+    display: block;
+}
+
+.icon-svg.error {
+	background-image: url("../images/error.svg");
+	color: #f60;
+    font-size: 150px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.icon-svg.fuera-servicio {
+	background-image: url("../images/error-505.svg");
+	color: #f60;
+    font-size: 150px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.icon-svg.checkmark {
+    background-image: url(../images/check.svg);
+}
+
+.success-message {
+	.icon-svg.checkmark {
+		display: none;
+	}
+}
+
+.success-message-shorter {
+	.icon-svg.checkmark{
+		display: block;
+	}
+}
+
+.download {
+	margin-top:50px;
+}
+
+.image-download{
+	background-image: url("../images/download.svg");
+	background-repeat: no-repeat;
+    width: 107px;
+    height: 144px;
+    margin: auto;
+    display: block;
+	background-size: 80px;
+}
+
+.icon-visa{
+	background-image: url("../images/icon-visa.png");
+	width: 40px;
+	height: 25px;
+}
+
+.icon-mastercard{
+	background-image: url("../images/icon-mastercard.png");
+	width: 40px;
+	height: 25px;
+}
+
+.icon-visa-white{
+	background-image: url("../images/icon-visa-white.png");
+	width: 40px;
+	height: 25px;
+	margin-left: 11px;
+}
+
+.icon-mastercard-white{
+	background-image: url("../images/icon-mastercard-white.png");
+	width: 40px;
+	height: 25px;
+	margin-left: 11px;
+}
+
+.map{
+	background-image: url("../images/map.png");
+	width: 348px;
+	height: 243px;
+	margin-top: 40px;	
+}
+
+.send-mail-smartphones {
+	display: none;
+}
+
+#map { 
+	height: 321px; 
+	width: 592px;
+	margin-left: 0px;
+	margin-top: 20px;
+		&.static {
+			height: 243px; 
+			width: 347px;
+			margin-left: 0px;
+		}
+}
+
+.tracking {
+	display: inline-block;
+	width: 118px;
+	height: 135px;
+	margin-right: -4px;
+	vertical-align: bottom;
+	margin-bottom: 90px;
+    margin-top: 20px;
+		p {
+			padding-top: 75px;
+		}		
+		h5 {				
+			color: $bright-orange;			
+			padding-top: 53px;   
+   			font-size: 12px;
+    		padding-right: 10px;
+    		white-space: initial;
+		}
+
+}
+

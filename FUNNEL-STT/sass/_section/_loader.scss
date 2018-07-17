@@ -1,0 +1,36 @@
+.preloader {
+    width: 300px;
+    margin: 0 auto;    
+    position: absolute;
+    top: 125px;
+    left:-20px;
+    background-color: #fff;
+    border: 1px solid $grey-medium-4;
+    border-radius: 8px;
+    height: 22px;  
+    overflow: hidden;
+}
+
+.ancho {
+    border: 1px solid $grey-medium-4;
+    color: $grey-medium-5;
+    text-align: center;
+    width: 0%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);   
+    background-color: $grey-medium-5;
+    border-radius: 8px 0px 0px 8px;
+    border-left: none;    
+}
+
+.gif-animado {
+    position: relative; 
+    background-image: url("../images/animacion-loader.gif");
+    background-repeat: no-repeat;
+    height: 215px;
+    width: 265px;
+}
+
+
+

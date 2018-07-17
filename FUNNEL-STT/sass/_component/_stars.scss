@@ -1,0 +1,192 @@
+.customer-effort{
+    position: relative;
+    top: 0;
+    left: 0;  
+    display: table;
+    width: 100%;
+    height: 84px;
+    text-align: center;
+    z-index: 9;  
+      .icon-close{
+        padding: 24px;
+        margin-top: 5px;
+      }
+      p {
+       text-align: center;
+        display: inline;
+       margin-left: 40px;
+     }
+
+    .content-customer{
+      vertical-align: middle;
+      display: table-cell;
+      width: 100%;
+      max-width: 500px;
+      margin: auto;
+      height: inherit;
+      position: relative;
+    }
+
+    .inputWrapper{
+      padding: 0;
+      width: 400px;
+      margin: auto;
+      float: none;
+      display: inline-block;
+        input{
+          background-color: transparent;
+          box-shadow: none;
+        &:focus{
+          background-color: transparent;
+          box-shadow: none;
+        }        
+        }
+        .inputArea {
+            .inputLabel  {
+              top: 23px;
+            }          
+        }
+    }
+
+    .btn {      
+      background-color: transparent;
+      color: $bright-orange;
+    }
+
+    .btn.btn-caps{
+      font-size: 13px;
+      padding-top: 20px;
+      padding-left: 15px;
+    }
+          
+
+.rating, .rating.faces { 
+  border: none;
+  display: inline;
+  height: 17px;
+}
+
+.rating > input, .rating.faces > input { 
+  display: none; cursor: pointer; 
+} 
+
+.rating > label:before { 
+  margin: 5px;
+  font-size: .8em;
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  content: "\e006";
+}
+
+.rating.faces label {
+  margin: 2px;
+  width: 24px;
+  height: 22px; 
+  display: inline-block;
+  background-image: url(../images/icon-smile-04.png);  
+  background-repeat: no-repeat;
+  background-size: contain;  
+}
+
+.rating.faces label.full-1 { 
+  background-image: url(../images/icon-smile-01.png);  
+}
+
+.rating.faces label.full-2 {
+  background-image: url(../images/icon-smile-02.png);
+}
+
+.rating.faces label.full-3 {
+  background-image: url(../images/icon-smile-03.png);
+}
+
+.rating.faces label.full-4 {
+  background-image: url(../images/icon-smile-04.png);
+}
+
+.rating.faces label:before {
+  content: "";
+}
+
+
+.rating > label, .rating.faces > label { 
+  color: $dark-48; 
+  float: right;
+  cursor: pointer; 
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { 
+  color: $bright-orange;  
+} /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { 
+  color: $deep-orange;  
+} 
+
+
+.rating.faces > input:checked ~ label.full-1, /* show gold star when clicked */
+.rating.faces:not(:checked) > label.full-1:hover, /* hover current star */
+.rating.faces:not(:checked) > label.full-1:hover ~ label.full-1 {
+  background-image: url(../images/icon-smile-hover-01.png);
+} /* hover previous stars in list */
+
+.rating.faces > input:checked ~ label.full-2, /* show gold star when clicked */
+.rating.faces:not(:checked) > label.full-2:hover /* hover current star */ {
+  background-image: url(../images/icon-smile-hover-02.png);
+} /* hover previous stars in list */
+
+.rating.faces > input:checked ~ label.full-3, /* show gold star when clicked */
+.rating.faces:not(:checked) > label.full-3:hover /* hover current star */ {
+  background-image: url(../images/icon-smile-hover-03.png);
+} /* hover previous stars in list */
+
+.rating.faces > input:checked ~ label.full-4, /* show gold star when clicked */
+.rating.faces:not(:checked) > label.full-4:hover /* hover current star */ {
+  background-image: url(../images/icon-smile-hover-04.png);
+} /* hover previous stars in list */
+
+//2-------------------------------
+.rating.faces:not(:checked)>label.full-2:hover~label.full-1{
+  background-image: url(../images/icon-smile-hover-01.png);
+}
+
+.rating.faces:not(:checked)>label.full-3:hover~label.full-1 {
+  background-image: url(../images/icon-smile-hover-01.png);
+}
+
+.rating.faces:not(:checked)>label.full-3:hover~label.full-2 {
+  background-image: url(../images/icon-smile-hover-02.png);
+}
+
+.rating.faces:not(:checked)>label.full-4:hover~label.full-1 {
+  background-image: url(../images/icon-smile-hover-01.png);
+}
+
+.rating.faces:not(:checked)>label.full-4:hover~label.full-2 {
+  background-image: url(../images/icon-smile-hover-02.png);
+}
+
+.rating.faces:not(:checked)>label.full-4:hover~label.full-3 {
+  background-image: url(../images/icon-smile-hover-03.png);
+}
+
+
+//---------------------------------
+
+
+
+~ .container-fluid{
+  .sidebar{
+    padding-top: 108px;
+  }
+  
+}
+
+}

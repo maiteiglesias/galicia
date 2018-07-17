@@ -1,0 +1,392 @@
+.titulo-seleccion-producto {
+    h1 {
+        font-size: 30px;
+        font-weight: 500;
+        letter-spacing: 0.4px;
+        color: $grey-dark-2;
+        br {
+            display: none;
+        }
+        b {
+            color: $orange;
+        }
+    }
+}
+
+.seleccion-producto-productos {
+    padding-bottom: 110px;
+    margin-bottom: 90px;
+    a,
+    p {
+        font-size: 18px;
+        line-height: 1.61;
+        letter-spacing: 0.3px;
+        color: $grey-dark;
+        font-weight: normal;
+        position: relative;
+        width: 100%;
+        display: inline-block;
+        &:before {
+            content: "\e908";
+            font-family: 'galicia-ui' !important;
+            color: $green-check;
+            font-size: 16px;
+            position: absolute;
+            left: -45px;
+        }
+        &.line {
+            border-bottom: 1px solid $dark-24;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            &:after {
+                content: "+";
+                color: $orange;
+                font-size: 25px;
+                position: absolute;
+                right: 0px;
+            }
+        }
+        &.line-expanded {
+            border-bottom: 1px solid $dark-24;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            &:after {
+                content: "-";
+                color: $orange;
+                font-size: 25px;
+                position: absolute;
+                right: 0px;
+            }
+        }
+    }
+    h5 {
+        font-size: 17px;
+        letter-spacing: 0.5px;
+        color: $grey-medium-6;
+        margin-top: 2px;
+    }
+    h4 {
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 0.7;
+        letter-spacing: 0.2px;
+        color: $orange;
+        margin-bottom: 35px;
+    }
+}
+
+.seleccion-producto-precio {
+    border-top: 1px solid $dark-24;
+    border-bottom: 1px solid $dark-24;
+    margin-top: 20px;
+    min-height: 85px;
+    margin-left: 20px;
+    margin-right: 20px;
+    p {
+        font-size: 11px;
+        line-height: 1.27;
+        letter-spacing: 0.3px;
+        color: $warm-grey;
+        text-align: center;
+        margin-top: -5px;
+    }
+    h3 {
+        font-size: 35px;
+        font-weight: 500;
+        letter-spacing: 0.3px;
+        text-align: center;
+        color: $grey-dark;
+        margin-top: 10px;
+        .grey {
+            color: $pinkish-grey;
+            padding-right: 5px;
+        }
+    }
+    h4 {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.3;
+        letter-spacing: 0.3px;
+        text-align: left;
+        color: $orange;
+    }
+    a {
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 1.38;
+        letter-spacing: 0.3px;
+        color: $orange;
+    }
+    .line-through {
+        &:before {
+            background-color: $pinkish-grey;
+            width: 150%;
+            left: -20px;
+            height: 1px;
+        }
+    }
+}
+
+.seleccion-producto-beneficios {
+    margin-bottom: 50px;
+    height: 190px;
+    margin-left: 10px;
+    margin-right: 5px;
+        p {
+            font-size: 15px;
+            line-height: 1.2;
+            letter-spacing: 0.2px;
+            text-align: center;
+            color: $grey-dark-2;
+            margin-bottom: 10px;
+        }
+        h3 {
+            font-size: 18px;
+            font-weight: 500;
+            letter-spacing: 0.3px;
+            color: $orange;
+            margin-bottom: 40px;
+            margin-top: 35px;
+            margin-left: -5px;
+        }
+        h4 {
+            font-size: 17px;
+            font-weight: 500;
+            line-height: 1.41;
+            text-align: center;
+            color: $orange;            
+            margin-bottom: 3px;
+        }
+        .border {
+            box-shadow: 3px 5px 11px 0 rgba(223, 223, 223, 0.5);
+            border-radius: 8px;
+            width: 31%;            
+            margin-right: 2px;
+            margin-left: 10px;
+            padding-left: 0px;
+            margin-bottom: 50px;
+        }
+}
+
+/* _botones */
+
+.seleccion-producto-boton {
+    text-align: center;
+    a {
+        &:before {
+            content: "";
+        }
+    }
+    .btn {
+        width: 300px;
+        height: 46px;
+        text-transform: none;
+        font-size: 18px;
+        line-height: 20px;
+        padding-right: 30px;
+            &.white {
+                background-color: #fff;
+                color: $orange;
+                text-transform: none;
+                font-size: 18px;
+                font-weight: 500;               
+                line-height: 1.11;
+                border: 1px solid $orange;
+                padding-right: 60px;
+                margin-bottom: 30px;
+                    .fa-angle-right:before {
+                        font-size: 42px;
+                        padding-left: 36px;
+                        position: absolute;
+                        top: 3px;
+                    }
+                    .fa-angle-down:before {
+                        font-size: 42px;
+                        padding-left: 36px;
+                        position: absolute;
+                        top: 3px;
+                    }
+            }
+    }
+}
+
+
+/* _imagenes */
+
+.seleccion-producto-tarjeta-simple {
+    width: 124px;
+    height: 83px;
+    margin-top: -15px;
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    margin-left: -27px;
+}
+
+.seleccion-producto-tarjeta-doble {
+    width: 124px;
+    height: 83px;
+    margin-top: -15px;
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    margin-left: -25px;
+}
+
+.seleccion-producto-tarjeta-triple {
+    width: 127px;
+    height: 83px;
+    margin-top: -15px;
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: -36px;
+}
+
+.imagen-programa-quiero {
+     background-image: url(../images/icon-coupon.png);
+     width: 69px;
+     height: 40px;
+     object-fit: contain;
+     display: block;
+     margin: 0 auto;
+}
+
+.imagen-promociones {
+    background-image: url(../images/icon-creditcard.png);
+    width: 78px;
+    height: 57px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    margin-top: -18px;
+}
+
+.imagen-atencion-preferencial {
+    background-image: url(../images/prefer/icon-person.png);
+    background-size: cover;
+    width: 64px;
+    height: 61px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+.imagen-tasa-preferencial {
+    background-image: url(../images/prefer/icon-economy.png);
+    background-size: cover;
+    width: 74px;
+    height: 61px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+.imagen-asistencia-galicia {
+    background-image: url(../images/prefer/icon-airplane.png);
+    background-size: cover;
+    width: 62px;
+    height: 61px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+/* _modal */
+
+.modal {
+    &.modalAdicionalPaquete {
+        .modal-content {
+            border-radius: 11px;
+                &.seleccion-producto {
+                    .modal-header {
+                        height: 63px;
+                        padding-left: 5%;
+                        border-radius: 11px 11px 0px 0px;
+                            .modal-title {
+                                font-size: 18px;
+                                font-weight: 500;                        
+                                letter-spacing: 0.3px;                        
+                                color:$orange;
+                                margin-top: -10px;                           
+                            }
+                            .close {                               
+                                position: absolute;
+                                right: 9px;
+                                top: 11px;
+                                z-index: 100;
+                                width: 38px;
+                                height: 38px; 
+                                background-color: transparent;
+                                border: none;
+                                background-image: url(../images/close.png);
+                                background-repeat: no-repeat;
+                                border-radius: initial;
+                            }
+                    }
+                    .modal-body {
+                      padding-left: 5%;
+                        p {
+                            font-size: 13px;
+                        }
+                        h1 {
+                             font-size: 35px;
+                             font-weight: 500;                             
+                             letter-spacing: 0.3px;                            
+                             color: $grey-dark;
+                             margin-top: -5px;
+                                .grey {
+                                    color: $pinkish-grey;
+                                    padding-right: 5px;
+                                }
+                                .line-through {
+                                    &:before {
+                                        background-color: $pinkish-grey;
+                                        width: 124%;
+                                        left: -7px;
+                                        height: 1px;
+                                    }
+                                }
+                        }
+                        h2 {
+                            font-size: 15px;                           
+                            line-height: 1.47;
+                            letter-spacing: 0.3px;                            
+                            color: $grey-dark-2;
+                            margin-top: 5px;
+                            margin-bottom: -3px;
+                                &.coloured {
+                                    color: $orange;
+                                    font-weight: 500;
+                                }
+                        }
+                        h3 {
+                            font-size: 15px;
+                            font-weight: 500;
+                            line-height: 0.67;
+                            color:$grey-dark;
+                            margin-top: 30px;
+                        }
+                        h5 {
+                            font-size: 11px;                            
+                            line-height: 1.27;
+                            letter-spacing: 0.3px;                           
+                            color: $warm-grey;
+                            margin-top: 5px;
+                            margin-bottom: 0px;
+                            font-weight: normal;
+                        }
+                        .border-right {
+                            border-right: 1px solid $warm-grey;
+                        }
+                        .scroll-text-mobile {
+                            overflow-x: hidden;
+                            overflow-y: hidden;
+                            -webkit-overflow-scrolling: touch;
+                            height: 100%;                           ;
+                        }
+                    }
+                }
+        }
+    }
+}
+
+
