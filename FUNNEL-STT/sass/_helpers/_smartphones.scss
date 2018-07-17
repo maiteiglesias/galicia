@@ -63,9 +63,6 @@
 		&.vertical-center {
 			margin-top: 60px;
 		}
-		&.xxx-small {
-			margin-top: 20px;
-		}
 		&.xx-small {
 			margin-top: 20px;
 		}
@@ -401,16 +398,14 @@
 	position: absolute;
 	z-index: 1;	
 	overflow: hidden;
-	padding-top: 30px;
 		h1 {		
 			padding-top: 0px;
-			font-size: 34px;
+			font-size: 37px;
 		}
 		h2 {
-			font-size: 24px;
-			line-height: 33px;
+			font-size: 27px;
+			line-height: 40px;
 			margin-bottom: 0px;
-			padding-top: 0px;
 		}
 }
 
@@ -439,18 +434,16 @@
 }
 
 .icon-exclamation a {
-	border: 1px solid $orange;
+	border: 1px solid #fe6e0d;
 	border-radius: 15px;
 	padding-left: 9px;
 	padding-right: 9px;
 	padding-top: 3px;
 	padding-bottom: 3px;
 	margin-left: 20px;
-	color: $orange;
-	line-height: 16px;
-	margin-right: 17px;
-	float: left;
-	margin-top: 8px;
+	color: #fe6e0d;
+	line-height: 48px;
+	margin-right: 9px;		
 }
 
 /* _menu */
